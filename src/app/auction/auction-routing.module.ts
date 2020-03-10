@@ -5,7 +5,9 @@ import { PromotionsSiteComponent } from './promotions-site/promotions-site.compo
 
 const routes: Routes = [
   {path: 'auctions', component: AuctionsSiteComponent},
-  {path: 'promotions', component: PromotionsSiteComponent}
+  {path: 'promotions', component: PromotionsSiteComponent},
+  {path: '**', component: AuctionsSiteComponent},
+  
 ];
 
 @NgModule({
