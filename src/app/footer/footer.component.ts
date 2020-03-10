@@ -7,7 +7,7 @@ import { MenuItem } from '../menu-item';
   <nav class="navbar fixed-bottom navbar-expand navbar-light bg-light mt-5 p-3">
   <ul class="navbar-nav">
     <li class="nav-item " *ngFor="let item of menuItems"  >
-          <a class="nav-link fa fa-user"  [href]="item.link" >{{item.name}} </a>
+          <a class="nav-link fa fa-user"  [routerLink]="item.link" >{{item.name}} </a>
         </li>
   </ul>
 </nav>
