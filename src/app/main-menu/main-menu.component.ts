@@ -23,6 +23,7 @@ export class MainMenuComponent implements OnInit {
     { name: 'Podpowiadamy', link: 'advices'},
     { name: 'Test-1', link: 'test1'},
     { name: 'Test-2', link: 'test2'},
+    { name: 'Test-3', link: 'test3'},
   ];
 
   constructor() { }
