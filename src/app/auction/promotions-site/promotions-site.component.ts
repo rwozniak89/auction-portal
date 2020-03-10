@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PromotionsSiteComponent implements OnInit {
 
+  user = {name: 'Radek'};
+  todaysDate = new Date();
+
   constructor() { }
 
   ngOnInit(): void {
