@@ -1,0 +1,18 @@
+<section class="mt-3"> 
+    <div class="row">
+        <h2 class="col-8"> Lista naszych auckji</h2>
+        <div class="col-4"> (search) </div>
+    </div>
+    <div class="row">
+        <!-- Tutaj nasze aukcje będą lada moment.... -->
+        <!-- div>div.col-3.hello>div*3{heelo word} -->
+        <!-- div>span -->
+
+
+
+        <div class="col-12 col-sm-6 col-md-4 col-ld-3" *ngFor="let x of auctions">
+            <app-auction-item-card [auction]=x></app-auction-item-card>
+            <!-- component z aukcją-->
+        </div>
+    </div>    
+</section>

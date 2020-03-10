@@ -1,0 +1,39 @@
+{
+    "auctions": [
+        {
+            "id": 1,
+            "title": "częsci do aparatu",
+            "imgUrl": "https://i.picsum.photos/id/36/200/200.jpg",
+            "description": "jakiś opis",
+            "price": 2000
+        },
+        {
+            "id": 2,
+            "title": "przedmot 2",
+            "imgUrl": "https://i.picsum.photos/id/22/200/200.jpg",
+            "description": "opis przemiotu nr XYZ",
+            "price": 123
+        },
+        {
+            "id": 3,
+            "title": "przedmot 3",
+            "imgUrl": "https://i.picsum.photos/id/33/200/200.jpg",
+            "description": "opis przemiotu nr XYZ",
+            "price": 1234
+        },
+        {
+            "id": 4,
+            "title": "przedmot 4",
+            "imgUrl": "https://i.picsum.photos/id/44/200/200.jpg",
+            "description": "opis przemiotu nr XYZ",
+            "price": 123
+        },
+        {
+            "id": 5,
+            "title": "przedmot 5",
+            "imgUrl": "https://i.picsum.photos/id/55/200/200.jpg",
+            "description": "opis przemiotu nr XYZ",
+            "price": 1
+        }
+    ]
+}
