@@ -6,7 +6,7 @@
     [class.show]="showMenu"
     [ngClass]="{ 'show': showMenu, 'innaFlaga': innaZmienna}" >
       <ul class="navbar-nav">
-        <li class="nav-item" *ngFor="let item of menuItems" routerLinkActive="active">
+        <li appBgHighlight="green" class="nav-item" *ngFor="let item of menuItems" routerLinkActive="active">
           <a class="nav-link" [routerLink]="item.link" >{{item.name}}</a>
           <!-- <a class="nav-link" [href]="item.link" *ngIf=isShown(item.name) >{{item.name}}</a> -->
         </li>

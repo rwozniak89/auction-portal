@@ -12,8 +12,10 @@ import { Subscription } from 'rxjs';
 })
 export class AuctionsSiteComponent implements OnInit, OnDestroy {
 
+  //@ViewChild('inputSearch')
   subscription: Subscription;
   auctions: AuctionItem[] = [];
+  searchText = '';
 
   constructor(private auctionsService: AuctionsService, private cartService: CartService) { }
   ngOnDestroy(): void {
