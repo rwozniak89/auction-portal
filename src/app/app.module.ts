@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { AuctionModule } from './auction/auction.module';
+import { AdviceModule } from './advice/advice.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { AuctionModule } from './auction/auction.module';
     HttpClientModule,
     AppRoutingModule,
     AuctionModule,
+    AdviceModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

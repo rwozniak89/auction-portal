@@ -6,6 +6,8 @@ import { AuctionsSiteComponent } from './auctions-site/auctions-site.component';
 import { AuctionItemCardComponent } from './auction-item-card/auction-item-card.component';
 import { PromotionsSiteComponent } from './promotions-site/promotions-site.component';
 import { FilterAuctionPipe } from './filter-auction.pipe';
+import { AddAuctionSiteComponent } from './add-auction-site/add-auction-site.component';
+import { ShoppingCartSiteComponent } from './shopping-cart-site/shopping-cart-site.component';
 
 
 @NgModule({
@@ -13,7 +15,9 @@ import { FilterAuctionPipe } from './filter-auction.pipe';
     AuctionsSiteComponent,
     AuctionItemCardComponent,
     PromotionsSiteComponent,
-    FilterAuctionPipe
+    FilterAuctionPipe,
+    AddAuctionSiteComponent,
+    ShoppingCartSiteComponent
   ],
   imports: [
     CommonModule,
