@@ -4,9 +4,9 @@
     <div class="card-body">
       <p class="card-text">{{auction.description}}</p>
       <div class="d-flex justify-content-between align-content-center">
-        <strong> {{auction.price}} + {{r}} VAT</strong>
+        <strong> {{auction.price}}</strong>
         <!-- <button *ngIf="canAddToCart" class="btn btn-primary"> -->
-        <button class="btn btn-primary">
+        <button class="btn btn-primary" (click)="handleAddToCardClick()">
           <i class="fa fa-cart-plus"></i>
         </button>
       </div>

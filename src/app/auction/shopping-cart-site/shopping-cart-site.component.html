@@ -1,3 +1,7 @@
-<p>shopping-cart-site works!</p>
+<section>
 
-<h1>pusto 1</h1>
+    <ul class="list-group">   
+        <li class="list-group-item" *ngFor="let item of cartItems"> {{ item |json}} </li>       
+    </ul>
+
+</section>  

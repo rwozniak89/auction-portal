@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject, Input } from '@angular/core';
+import { Component,  Input, EventEmitter, Output } from '@angular/core';
 import { AuctionItem } from './../auction-item';
 
 @Component({
@@ -6,16 +6,14 @@ import { AuctionItem } from './../auction-item';
   templateUrl: './auction-item-card.component.html',
   styles: []
 })
-export class AuctionItemCardComponent implements OnInit {
+export class AuctionItemCardComponent {
 
-@Input() auction: AuctionItem;
+  @Input() auction: AuctionItem;
+  @Output() addToCart = new EventEmitter<AuctionItem>()
 
-  r: string = '23%';
-
-  constructor() { }
-
-  ngOnInit(): void {
-      //this.r = (Math.random() * 6) + 1;
+  handleAddToCardClick() {
+    console.log('AuctionItemCardComponent handleAddToCardClick');
+    this.addToCart.emit(this.auction);
   }
-
 }
+
