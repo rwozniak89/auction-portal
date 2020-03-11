@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-advices-site',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdvicesSiteComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
   }
 
+
+  handleButtonClick(id: number){
+    //routing przez kod
+    console.log(id);
+    this.router.navigate(['article', id], {relativeTo: this.activatedRoute})
+  }
 }
