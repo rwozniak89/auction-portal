@@ -1,0 +1,97 @@
+#2020-03-09 Angular SPA
+##prowazący https://github.com/michaljabi
+##Wymagane
+node.js, git
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+Array.of() statyczne
+Array.prototype - na obiekcie
+
+### VSC
+file -> autoSave
+file -> preference -> stettings -> tree indent -> 16
+F1 -> quokka ran on save ... 
+jescze raz i run on pro
+
+
+### terminal 
+ctrl ~ - terminale otwiera
+
+npm install w folderze projektu
+
+npm run build do startu
+
+npm install -g @angular/cli globalnie
+
+ng --version
+
+## github
+https://github.com/michaljabi/20200309-angular
+
+# new angular app
+ng new auction-portal
+
+w visual stuido code
+
+npm run build
+
+npm run build:prod
+
+## dodawanie komponentu
+
+ng generate component header
+
+## bootsrap 
+
+npm install bootstrap
+
+podłaczenie scizkzi w angular.json
+..."styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
+
+i npm run start
+
+## nowy komponent MainMenu
+ng g component MainMenu --inlineStyle --skipTests
+
+
+# Dzień drugi
+
+
+##nowy komponent
+ng generate component footer --inlineStyle --inlineTemplate --skipTests
+
+##czcionki
+npm install --save @fortawesome/fontawesome-free
+
+## git
+instalacja gita ze strony pdorucenta widnwos 64
+
+git remote add origin https://github.com/rwozniak89
+git commit
+
+git config --global user.email "rwozniak89@gmail.com"
+git config --global user.name "Radek"
+
+git commit -m "Your comment"
+ git push -u origin master
+git add .
+ git push -u origin master
+
+## zdjecia lorem ictum 
+https://picsum.photos/
+
+##nowy modul 
+ng g module auction --routing --module app
+
+
+##JSON SERVER
+
+npm install -D json-server
+w package.json "backend":"json-server --watch fake-db.json",
+
+npm run backend
+
+
